@@ -16,7 +16,7 @@ Visit our [Wiki](https://github.com/cvirando/tunnelcrm/wiki)
 
 We would like to extend our thanks to the following sponsors for funding Tunnel CRM development. If you are interested in becoming a sponsor, please visit the Tunnel CRM [Sponsor page](https://github.com/sponsors/robertnicjoo) Or you can [Buy me a coffee](https://www.buymeacoffee.com/robertnicjoo).
 
-## Creadits
+## Credits
 
 Tunnel CRM made by [Robert Nicjoo](https://robertnicjoo.vercel.app/) at [CV. IRANDO](https://irando.co.id)
 
