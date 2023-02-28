@@ -22,3 +22,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/modules', [App\Http\Controllers\HomeController::class, 'modules'])->name('modules');
 Route::get('/disable-module/{name}', [App\Http\Controllers\HomeController::class, 'disableModule'])->name('disableModule');
 Route::get('/enable-module/{name}', [App\Http\Controllers\HomeController::class, 'enableModule'])->name('enableModule');
+
+Route::get('/users', [App\Http\Controllers\UsersController::class, 'index'])->name('usersIndex');
+Route::post('/users-store', [App\Http\Controllers\UsersController::class, 'store'])->name('usersStore');
+Route::delete('/users-delete/{id}', [App\Http\Controllers\UsersController::class, 'destroy'])->name('usersDestroy');
+Route::get('/profile', [App\Http\Controllers\UsersController::class, 'profile'])->name('profile');
+Route::put('/update-profile/{id}', [App\Http\Controllers\UsersController::class, 'update'])->name('updateProfile');

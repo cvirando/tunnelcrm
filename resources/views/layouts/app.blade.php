@@ -46,7 +46,7 @@
                         <div class="btn-list">
                             @if (Route::has('login'))
                                 <a href="{{ route('login') }}" class="btn" target="_blank" rel="noreferrer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="https://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
                                         <path d="M20 12h-13l3 -3m0 6l-3 -3"></path>
@@ -56,7 +56,7 @@
                             @endif
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}" class="btn" target="_blank" rel="noreferrer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-key" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="https://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-key" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M14 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
                                         <path d="M21 12a9 9 0 1 1 -18 0a9 9 0 0 1 18 0z"></path>
@@ -71,17 +71,17 @@
                 @else
                     <div class="d-none d-md-flex">
                         <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode" data-bs-toggle="tooltip" data-bs-placement="bottom">
-                        <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+                        <!-- Download SVG icon from https://tabler-icons.io/i/moon -->
+                        <svg xmlns="https://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
                         </a>
                         <a href="?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode" data-bs-toggle="tooltip" data-bs-placement="bottom">
-                        <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+                        <!-- Download SVG icon from https://tabler-icons.io/i/sun -->
+                        <svg xmlns="https://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
                         </a>
                         <div class="nav-item dropdown d-none d-md-flex me-3">
                         <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
-                            <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                            <!-- Download SVG icon from https://tabler-icons.io/i/bell -->
+                            <svg xmlns="https://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
                             <span class="badge bg-red"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
@@ -101,8 +101,8 @@
                                     </div>
                                     <div class="col-auto">
                                     <a href="#" class="list-group-item-actions">
-                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                                        <!-- Download SVG icon from https://tabler-icons.io/i/star -->
+                                        <svg xmlns="https://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
                                     </a>
                                     </div>
                                 </div>
@@ -118,8 +118,8 @@
                                     </div>
                                     <div class="col-auto">
                                     <a href="#" class="list-group-item-actions show">
-                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-yellow" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                                        <!-- Download SVG icon from https://tabler-icons.io/i/star -->
+                                        <svg xmlns="https://www.w3.org/2000/svg" class="icon text-yellow" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
                                     </a>
                                     </div>
                                 </div>
@@ -135,8 +135,8 @@
                                     </div>
                                     <div class="col-auto">
                                     <a href="#" class="list-group-item-actions">
-                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                                        <!-- Download SVG icon from https://tabler-icons.io/i/star -->
+                                        <svg xmlns="https://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
                                     </a>
                                     </div>
                                 </div>
@@ -152,8 +152,8 @@
                                     </div>
                                     <div class="col-auto">
                                     <a href="#" class="list-group-item-actions">
-                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                                        <!-- Download SVG icon from https://tabler-icons.io/i/star -->
+                                        <svg xmlns="https://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
                                     </a>
                                     </div>
                                 </div>
@@ -165,18 +165,15 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-                        <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+                        <span class="avatar avatar-sm" style="background-image: url({{asset('/template/dist/img/tunnel.png')}})"></span>
                         <div class="d-none d-xl-block ps-2">
                             <div>{{Auth::user()->name}}</div>
                             <div class="mt-1 small text-muted">{{Auth::user()->roles[0]['name']}}</div>
                         </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                            <a href="#" class="dropdown-item">Status</a>
-                            <a href="./profile.html" class="dropdown-item">Profile</a>
-                            <a href="#" class="dropdown-item">Feedback</a>
+                            <a href="{{route('profile')}}" class="dropdown-item">Profile</a>
                             <div class="dropdown-divider"></div>
-                            <a href="./settings.html" class="dropdown-item">Settings</a>
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
@@ -197,45 +194,59 @@
                     <ul class="navbar-nav">
                       <li class="nav-item active">
                         <a class="nav-link" href="{{route('home')}}" >
-                          <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                          <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from https://tabler-icons.io/i/home -->
+                            <svg xmlns="https://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
                           </span>
                           <span class="nav-link-title">
                             Dashboard
                           </span>
                         </a>
                       </li>
+                      <li class="nav-item">
+                        @role('super-admin')
+                        <a class="nav-link" href="{{route('usersIndex')}}" >
+                          <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from https://tabler-icons.io/i/home -->
+                            <svg xmlns="https://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                          </span>
+                          <span class="nav-link-title">
+                            Users
+                          </span>
+                        </a>
+                        @endrole
+                      </li>
                     </ul>
+                    @role('super-admin')
                     <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
-                      <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                              <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M15 15l3.35 3.35" /><path d="M9 15l-3.35 3.35" /><path d="M5.65 5.65l3.35 3.35" /><path d="M18.35 5.65l-3.35 3.35" /></svg>
-                              </span>
-                              <span class="nav-link-title">
-                                Help
-                              </span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" rel="noopener nofollow" href="https://irando.co.id">
-                                    Website
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+                                <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from https://tabler-icons.io/i/lifebuoy -->
+                                    <svg xmlns="https://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M15 15l3.35 3.35" /><path d="M9 15l-3.35 3.35" /><path d="M5.65 5.65l3.35 3.35" /><path d="M18.35 5.65l-3.35 3.35" /></svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Help
+                                </span>
                                 </a>
-                                <a class="dropdown-item" rel="noopener nofollow" href="https://irando.co.id/contact-us">
-                                    Contact Us
-                                </a>
-                                <a class="dropdown-item" href="https://github.com/cvirando/tunnelcrm" target="_blank" rel="noopener">
-                                    Source code
-                                </a>
-                                <a class="dropdown-item text-pink" href="https://github.com/sponsors/robertnicjoo" target="_blank" rel="noopener">
-                                    <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
-                                    Sponsor project!
-                                </a>
-                            </div>
-                        </li>
-                      </ul>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" rel="noopener nofollow" target="_blank" href="https://tunnelcrm.com">
+                                        Website
+                                    </a>
+                                    <a class="dropdown-item" rel="noopener nofollow" href="mailto:hello@tunnelcrm.com">
+                                        Contact Us
+                                    </a>
+                                    <a class="dropdown-item" href="https://github.com/cvirando/tunnelcrm" target="_blank" rel="noopener">
+                                        Source code
+                                    </a>
+                                    <a class="dropdown-item text-pink" href="https://github.com/sponsors/robertnicjoo" target="_blank" rel="noopener">
+                                        <!-- Download SVG icon from https://tabler-icons.io/i/heart -->
+                                        <svg xmlns="https://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                                        Sponsor project!
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                    @endrole
                   </div>
                 </div>
               </div>
@@ -267,8 +278,8 @@
                         <li class="list-inline-item"><a href="https://github.com/cvirando/tunnelcrm" target="_blank" class="link-secondary" rel="noopener">Source code</a></li>
                         <li class="list-inline-item">
                           <a href="https://github.com/sponsors/robertnicjoo" target="_blank" class="link-secondary" rel="noopener">
-                            <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                            <!-- Download SVG icon from https://tabler-icons.io/i/heart -->
+                            <svg xmlns="https://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
                             Sponsor
                           </a>
                         </li>
@@ -278,11 +289,11 @@
                       <ul class="list-inline list-inline-dots mb-0">
                         <li class="list-inline-item">
                           Copyright &copy; {{date('Y')}}
-                          <a href="{{url('/')}}" class="link-secondary">{{ config('app.name', 'TunnelCRM') }}</a>.
+                          <a href="https://tunnelcrm.com" rel="nofollow noopener" class="link-secondary" target="_blank">TunnelCRM</a>.
                           All rights reserved.
                         </li>
                         <li class="list-inline-item">
-                          Developed by: <a href="https://irando.co.id" class="link-secondary" rel="noopener">
+                          Developed by: <a href="https://irando.co.id" class="link-secondary" rel="nofollow noopener" target="_blank">
                             CV. IRANDO
                           </a>
                         </li>
