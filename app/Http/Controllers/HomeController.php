@@ -102,7 +102,17 @@ class HomeController extends Controller
      */
     public function enableModule($name)
     {
-        Artisan::call('module:enable '.$name.'');
-        return back();
+        // $pendings = Artisan::call('migrate:status --pending');
+        // dd($pendings);
+        // Artisan::call('migrate', ['--pretend' => true, '--force' => true]);
+        // return trim(Artisan::output()) !== 'Nothing to migrate.';
+
+        // if($hasRun) {
+            Artisan::call('module:enable '.$name.'');
+            return back();
+        // } else {
+        //     Artisan::call('module:migrate '.$name.'');
+        //     Artisan::call('module:seed '.$name.'');
+        // }
     }
 }

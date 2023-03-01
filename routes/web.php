@@ -28,3 +28,11 @@ Route::post('/users-store', [App\Http\Controllers\UsersController::class, 'store
 Route::delete('/users-delete/{id}', [App\Http\Controllers\UsersController::class, 'destroy'])->name('usersDestroy');
 Route::get('/profile', [App\Http\Controllers\UsersController::class, 'profile'])->name('profile');
 Route::put('/update-profile/{id}', [App\Http\Controllers\UsersController::class, 'update'])->name('updateProfile');
+
+Route::group(['prefix' => 'performance'], function () {
+    Route::get('/', [App\Http\Controllers\PerformanceController::class, 'index'])->name('performance');
+    Route::post('/clearCaches', [App\Http\Controllers\PerformanceController::class, 'clearCaches'])->name('clearCaches');
+    Route::post('/debugMode', [App\Http\Controllers\PerformanceController::class, 'debugMode'])->name('debugMode');
+    Route::post('/SendTestMAil', [App\Http\Controllers\PerformanceController::class, 'SendTestMAil'])->name('SendTestMAil');
+    Route::post('/MaintenanceMode', [App\Http\Controllers\PerformanceController::class, 'MaintenanceMode'])->name('MaintenanceMode');
+});

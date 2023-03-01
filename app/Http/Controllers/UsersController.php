@@ -8,6 +8,7 @@ use Spatie\Permission\Models\Permission;
 use App\Models\User;
 use Auth;
 use Hash;
+use Session;
 
 class UsersController extends Controller
 {
@@ -52,6 +53,7 @@ class UsersController extends Controller
                 $user->assignRole($role_r); //Assigning role to user
             }
         }
+        Session::flash('message', 'User successfully added.');
         return redirect()->back();
     }
 
@@ -82,6 +84,7 @@ class UsersController extends Controller
                 }
             }
         }
+        Session::flash('message', 'Profile successfully updated.');
         return redirect()->back();
     }
 
@@ -89,6 +92,7 @@ class UsersController extends Controller
     {
         $user = User::findOrFail($id);
         $user->delete();
+        Session::flash('message', 'User successfully deleted.');
         return redirect()->route('usersIndex');
     }
 }
