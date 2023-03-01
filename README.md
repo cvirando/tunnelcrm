@@ -10,7 +10,7 @@ Tunnel CRM is a web application framework where you can build any type of websit
 
 ## Documentation
 
-Visit our [Wiki](https://github.com/cvirando/tunnelcrm/wiki)
+Visit our [Docs](https://docs.tunnelcrm.com/)
 
 ## Tunnel CRM Sponsors
 
