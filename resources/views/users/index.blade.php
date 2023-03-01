@@ -79,7 +79,7 @@
             <div class="card card-md">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table id="table-default" class="table card-table table-vcenter text-nowrap datatable">
+                        <table class="table-default table card-table table-vcenter text-nowrap datatable">
                         <thead>
                             <tr>
                             <th class="text-center">ID</th>
@@ -163,50 +163,4 @@
             </div>
         </div>
     </div>
-@endsection
-
-
-@section('styles')
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.6.1/css/colReorder.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css">
-    <link href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.2/b-2.3.4/b-colvis-2.3.4/b-html5-2.3.4/b-print-2.3.4/datatables.min.css"/>
-@endsection
-
-@section('scripts')
-    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.3.4/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.bootstrap5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.print.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.colVis.min.js"></script>
-    <script src="https://cdn.datatables.net/colreorder/1.6.1/js/dataTables.colReorder.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.2/b-2.3.4/b-colvis-2.3.4/b-html5-2.3.4/b-print-2.3.4/datatables.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // datatable
-            var table = $('#table-default').DataTable({
-                dom: 'Bfrtlip',
-                buttons: [
-                    'colvis',
-                    {
-                        extend: 'collection',
-                        text: 'Export',
-                        buttons:[
-                            'copyHtml5',
-                            'csv',
-                            'excel',
-                            'pdf'
-                        ]
-                    }
-                ]
-            });
-            table.buttons().container().appendTo('#example_wrapper .col-md-6:eq(0)');
-        });
-    </script>
 @endsection
