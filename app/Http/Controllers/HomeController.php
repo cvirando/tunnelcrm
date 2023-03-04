@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Artisan;
 use Nwidart\Modules\Commands;
-use Module;
 use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Http;
+use Symfony\Component\Process\Process;
+use Illuminate\Support\Facades\Artisan;
 use Spatie\Permission\Models\Permission;
+use Symfony\Component\Process\Exception\ProcessFailedException;
 use Str;
 use Auth;
-use Illuminate\Support\Facades\Http;
-use Symfony\Component\Process\Exception\ProcessFailedException;
-use Symfony\Component\Process\Process;
+use Schema;
+use Module;
 
 class HomeController extends Controller
 {
@@ -67,7 +68,6 @@ class HomeController extends Controller
      */
     public function modules()
     {
-        //real func
         if(Auth::user()->hasPermissionTo('manage modules')) {
             // Get Modules
             $response = Http::get('https://irando.co.id/modules-list/modules.json');
@@ -102,17 +102,15 @@ class HomeController extends Controller
      */
     public function enableModule($name)
     {
-        // $pendings = Artisan::call('migrate:status --pending');
-        // dd($pendings);
-        // Artisan::call('migrate', ['--pretend' => true, '--force' => true]);
-        // return trim(Artisan::output()) !== 'Nothing to migrate.';
-
-        // if($hasRun) {
+        $tableExist = Schema::hasTable(''.$name.'');
+        if(!$tableExist) {
+            Artisan::call('module:migrate '.$name.'');
+            Artisan::call('module:seed '.$name.'');
+            Artisan::call('module:publish '.$name.'');
             Artisan::call('module:enable '.$name.'');
-            return back();
-        // } else {
-        //     Artisan::call('module:migrate '.$name.'');
-        //     Artisan::call('module:seed '.$name.'');
-        // }
+        } else {
+            Artisan::call('module:enable '.$name.'');
+        }
+        return back();
     }
 }
