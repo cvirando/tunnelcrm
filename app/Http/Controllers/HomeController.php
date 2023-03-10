@@ -108,8 +108,10 @@ class HomeController extends Controller
             Artisan::call('module:seed '.$name.'');
             Artisan::call('module:publish '.$name.'');
             Artisan::call('module:enable '.$name.'');
+            Artisan::call('module:update '.$name.'');
         } else {
             Artisan::call('module:enable '.$name.'');
+            Artisan::call('module:update '.$name.'');
         }
         return back();
     }
