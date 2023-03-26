@@ -114,7 +114,7 @@
                                                         <h6><b>Installation:</b></h6>
                                                         <p>To install <b>{{$module['name']}}</b> module, please run following command in your website <u>root folder</u> by using <u>terminal</u>.</p>
                                                         <p>
-                                                            <pre style="white-space: normal;background: #8080803d;
+                                                            <pre style="white-space: normal;background: #1f2739;
                                                             padding: 1rem;
                                                             border-radius: 1rem;"><code>
                                                                 @foreach ($module['commands'] as $key => $command)
