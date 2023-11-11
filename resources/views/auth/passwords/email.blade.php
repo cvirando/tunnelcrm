@@ -4,6 +4,9 @@
 <form class="card card-md" method="POST" action="{{ route('password.email', app()->getLocale()) }}">
     @csrf
     <div class="card-body">
+        <div class="text-center">
+            <img  data-bs-toggle="tooltip" data-bs-placement="right" title="Tunnel CRM" src="{{ asset('template/static/tunnelcrm.png')}}" width="120" height="120" alt="{{config('app.name')}}">
+        </div>
         @if (session('status'))
             <div class="alert alert-success" role="alert">
                 {{ session('status') }}
@@ -29,9 +32,9 @@
         </div>
     </div>
 </form>
-@if (Route::has('login', app()->getLocale()))
+@if (Route::has('login'))
 <div class="text-center text-muted mt-3">
-    Forget it, <a href="{{route('login', app()->getLocale())}}">send me back</a> to the sign in screen.
+    Forget it, <a href="{{route('login')}}">send me back</a> to the sign in screen.
 </div>
 @endif
 @endsection

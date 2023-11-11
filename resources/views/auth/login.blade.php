@@ -4,6 +4,9 @@
 <form class="card card-md" autocomplete="off" method="POST" action="{{ route('login', app()->getLocale()) }}">
     @csrf
     <div class="card-body">
+        <div class="text-center">
+            <img  data-bs-toggle="tooltip" data-bs-placement="right" title="Tunnel CRM" src="{{ asset('template/static/tunnelcrm.png')}}" width="120" height="120" alt="{{config('app.name')}}">
+        </div>
         <h2 class="card-title text-center mb-4">{{ __('Login to your account') }}</h2>
         <div class="mb-3">
             <label class="form-label">{{ __('Email Address') }}</label>
@@ -48,6 +51,11 @@
         </div>
         <div class="form-footer">
             <button type="submit" class="btn btn-primary w-100">{{ __('Sign in') }}</button>
+            @if (Route::has('password.request'))
+                <a class="btn ps-0 btn-link" href="{{ route('password.request') }}">
+                    {{ __('Forgot Your Password?') }}
+                </a>
+            @endif
         </div>
     </div>
     <!-- <div class="hr-text">or</div>
@@ -66,9 +74,9 @@
         </div>
     </div> -->
 </form>
-@if (Route::has('register', app()->getLocale()))
+@if (Route::has('register'))
 <div class="text-center text-muted mt-3">
-    Don't have account yet? <a href="{{route('register', app()->getLocale())}}" tabindex="-1">{{ __('Sign up')}}</a>
+    Don't have account yet? <a href="{{route('register')}}" tabindex="-1">{{ __('Sign up')}}</a>
 </div>
 @endif
 @endsection

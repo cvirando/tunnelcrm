@@ -4,6 +4,9 @@
 <form class="card card-md" method="POST" action="{{ route('register', app()->getLocale()) }}">
     @csrf
     <div class="card-body">
+        <div class="text-center">
+            <img  data-bs-toggle="tooltip" data-bs-placement="right" title="Tunnel CRM" src="{{ asset('template/static/tunnelcrm.png')}}" width="120" height="120" alt="{{config('app.name')}}">
+        </div>
         <h2 class="card-title text-center mb-4">{{ __('Create new account') }}</h2>
         <div class="mb-3">
             <label class="form-label">{{ __('Name') }}</label>
@@ -59,9 +62,9 @@
         </div>
     </div>
 </form>
-@if (Route::has('login', app()->getLocale()))
+@if (Route::has('login'))
 <div class="text-center text-muted mt-3">
-    Already a member? <a href="{{route('login', app()->getLocale())}}" tabindex="-1">{{ __('Sign in')}}</a>
+    Already a member? <a href="{{route('login')}}" tabindex="-1">{{ __('Sign in')}}</a>
 </div>
 @endif
 @endsection

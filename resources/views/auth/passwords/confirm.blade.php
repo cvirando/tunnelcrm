@@ -8,6 +8,9 @@
                 <div class="card-header">{{ __('Confirm Password') }}</div>
 
                 <div class="card-body">
+                    <div class="text-center">
+                        <img  data-bs-toggle="tooltip" data-bs-placement="right" title="Tunnel CRM" src="{{ asset('template/static/tunnelcrm.png')}}" width="120" height="120" alt="{{config('app.name')}}">
+                    </div>
                     {{ __('Please confirm your password before continuing.') }}
 
                     <form method="POST" action="{{ route('password.confirm', app()->getLocale()) }}">

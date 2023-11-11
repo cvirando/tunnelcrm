@@ -1,10 +1,2 @@
 {
-    "Blog": true,
-    "Contacts": false,
-    "Pages": false,
-    "Accounting": false,
-    "Store": false,
-    "Whatsapp": false,
-    "Telegram": false,
-    "Seo": true
 }
